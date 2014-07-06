@@ -34,7 +34,7 @@ module.exports = function(grunt) {
       amd: {
         src: "tmp/**/*.amd.js",
         dest: "dist/my_library.amd.js"
-      },
+      }
     },
     browser: {
       dist: {
@@ -69,4 +69,4 @@ module.exports = function(grunt) {
   });
 
   grunt.registerTask("default", ["transpile", "concat:amd", "browser"]);
-}
+};
